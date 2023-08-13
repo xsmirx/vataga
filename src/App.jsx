@@ -1,10 +1,20 @@
-import './App.css'
+import {useState} from 'react'
+import {Header} from './components/Header'
+import {Filter} from './components/Filter'
 
 function App() {
+  const [findValue, setFindValue] = useState('')
+
+  const handleGangeFind = (e) => {
+    setFindValue(e.target.value)
+  }
+
   return (
-    <div>
-      <p>Hello Vataga</p>
-      <img src="https://raw.githubusercontent.com/devope/album/main/1.png" alt="image" />
+    <div className="container m-auto px-4">
+      <Header findeValue={findValue} handleGangeFind={handleGangeFind} />
+      <main>
+        <Filter />
+      </main>
     </div>
   )
 }
