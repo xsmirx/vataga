@@ -5,7 +5,7 @@
   align-items: center;
 }
 .card__box {
-  border: 1px solid white;
+  border: 1px solid black;
   width: 60%;
   display: flex;
   align-items: center;

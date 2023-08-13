@@ -1,15 +1,15 @@
-import "./cardGame.css";
-import img from "../../../public/favicon.ico";
+import './cardGame.css'
+import img from '../../../public/favicon.ico'
 
 export default function CardGame(props) {
   const getDifficultyName = (props) => {
-    if (props.difficulty === 1) return "Легко";
-    if (props.difficulty === 2) return "Средне";
-    if (props.difficulty === 3) return "Трудно";
-  };
+    if (props.difficulty === 1) return 'Легко'
+    if (props.difficulty === 2) return 'Средне'
+    if (props.difficulty === 3) return 'Трудно'
+  }
 
   return (
-    <div className="card__container">
+    <div className="card__container mt-4">
       <div className="card__box">
         <div className="card__cont-img">
           <img
@@ -41,5 +41,5 @@ export default function CardGame(props) {
         </div>
       </div>
     </div>
-  );
+  )
 }
