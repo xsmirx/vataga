@@ -1,6 +1,6 @@
 import {useState} from 'react'
-import './App.css'
 import {Header} from './components/Header'
+import {Filter} from './components/Filter'
 
 function App() {
   const [findValue, setFindValue] = useState('')
@@ -12,7 +12,9 @@ function App() {
   return (
     <div className="container m-auto px-4">
       <Header findeValue={findValue} handleGangeFind={handleGangeFind} />
-      <main></main>
+      <main>
+        <Filter />
+      </main>
     </div>
   )
 }

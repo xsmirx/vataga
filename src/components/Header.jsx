@@ -1,11 +1,12 @@
-import {Input} from './Input'
+import {TextField} from '@mui/material'
 
 export const Header = ({findeValue, handleGangeFind}) => {
   return (
-    <header className="h-16 flex items-center justify-between border-b">
+    <header className="py-4 flex items-center justify-between border-b">
       <a href="/">Vataga</a>
-      <Input
-        className="w-64"
+      <TextField
+        size="small"
+        variant="outlined"
         placeholder="Find game..."
         value={findeValue}
         onChange={handleGangeFind}
