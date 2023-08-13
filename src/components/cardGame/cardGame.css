@@ -1,0 +1,41 @@
+.card,
+.card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__box {
+  border: 1px solid white;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  padding: 1%;
+}
+.card__name {
+  font-size: 24px;
+  font-weight: bold;
+}
+.card__cont-img {
+  width: 40%;
+  margin: 2%;
+}
+img {
+  width: 100%;
+}
+.card__cont-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.card__box-info {
+  display: flex;
+  justify-content: space-around;
+}
+.card__h1-name {
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .card__box {
+    width: 80%;
+  }
+}
